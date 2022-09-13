@@ -38,8 +38,17 @@ Por arriba de los grupos esta la subscripcion que es quien paga la cuenta y arri
 Se trata de  funciones serverless estilo LAMBDA AWS.
 
 
+# Azure Storage
 
+Basicamente es como el S3 de aws y este se divide en:
 
+## General Propose
+
+Es el mas comun tipo de almacenamiento se abrevia como gpv2
+
+## Azure Data Lake Storage
+
+Es el mas barato tipo de almacenamiento 1.8 centavos por GB
 
 
 

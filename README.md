@@ -104,7 +104,30 @@ Cada rol puede tener permisos granulares. COmo en Linux puedes asginar permisos 
 ## Zero Trist Model Security
 
 Es un modelo que te dice de los privilegios minimos que tienes que utilizar cuando creas usuarios o dar privilegios a unos existentes.Es como cerrar todas las puertas 
-de dentro de tu casa y solo las perosnas que tienen la llave prodran abrir los cuartos. NO confies en otros
+de dentro de tu casa y solo las perosnas que tienen la llave prodran abrir los cuartos. NO confies en otros.
+
+Hay tes pricipios fundamentales de esta metodologia:
+
+1. Verifique explicitamente
+2. Use el acceso con menos privilegios
+3. Asuma que ha habido una violacion de datos.
+
+Existen 2 maneras de tener accceso Just in Time (JIT)
+Just enough access ( JEA)
+
+Proteccion con tra ataques de fuerza bruta. Descarga de archicos todo esto se necesitara detener.
+Se podria encryptar la informacion.
+
+## Defense in Depth
+
+Se refiere a que  no solo uses una proteccion si no intentes usar multiples herramientas para proteger la seguridad de las aplicaciones como 
+identity perimeter ( DDoS) API Mangment firewalls etc. No todos los usuarios seran aptos para conectarse al escritorio remoto. Existen 7 capas segun Microsoft
+
+#  Micorosft Defender for Cloud 
+
+Es un producto por el cual tienes que pagar. Protege servicios que tengas en la nube pero existe un costo al mes 
+
+
 
 
 

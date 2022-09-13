@@ -83,7 +83,39 @@ IPS etc manda mensaje para verificar que si sea la persona osea toma una descici
 
 ## 2FA
 
-2ble factor de autenticacion para mayor seguridad tambien llamado MFA 
+2ble factor de autenticacion para mayor seguridad tambien llamado MFA. Existen varios metodos para esto SMS, Email, authenticator, app, phone call.
+
+## Three Factors
+
+COmo por ejemplo tus huellas tu rostro  algo que no se puede cambiar
+
+## Passwordless
+
+una nueva forma de autenticarte te pide que memorices algunas cosas y usa por ejemplo tu huella o tu tu patron o por ejemplo el reconocimiento de tu rostro 
+o el que se usa en outlook que te dice un numero para entrar.
+
+
+## Role Base Access COntrol (RBAC)
+
+Tiene que ver con autorizacion . Si tienes un token puedes acceder esa es la escencia. Se pueden generar roles. Depende por ejemplo de los departamentos
+Cada rol puede tener permisos granulares. COmo en Linux puedes asginar permisos de lectura y escritura a archivos.
+
+
+## Zero Trist Model Security
+
+Es un modelo que te dice de los privilegios minimos que tienes que utilizar cuando creas usuarios o dar privilegios a unos existentes.Es como cerrar todas las puertas 
+de dentro de tu casa y solo las perosnas que tienen la llave prodran abrir los cuartos. NO confies en otros
+
+
+
+
+
+
+
+
+
+
+
 
 
 

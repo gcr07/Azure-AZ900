@@ -131,12 +131,59 @@ Es un producto por el cual tienes que pagar. Protege servicios que tengas en la 
 
 
 
+# de aqui en adelante la informacion fue sacada de Microsoft
 
+# Modelos de la Nube
 
+## Nube privada
 
+Es la nube que por poner un ejemplo se traslada de tu infra on premise a azure y es mas cara que la publica.
 
+## Nube pública
 
+Un proveedor de nube de terceros crea, controla y mantiene una nube pública. Con una nube pública, cualquier persona que quiera comprar servicios en la nube puede acceder a los recursos y usarlos. La disponibilidad pública general es una diferencia clave entre las nubes públicas y privadas.
 
+## Nube híbrida
+
+Una nube híbrida es un entorno informático que usa nubes públicas y privadas en un entorno interconectado. Se puede usar un entorno de nube híbrida para permitir el incremento de una nube privada y acomodarse al aumento de la demanda temporal mediante la implementación de recursos de nube pública. La nube híbrida se puede usar para proporcionar una capa adicional de seguridad.
+
+# Ventajas de Azure o la Nube
+
+## Alta disponibilidad
+
+Que los recursos esten siempre disponibles...
+
+## SLA Acuerdos de nivel de Servicio
+
+Es el acuerdo formal entre un proveedor de servicios y un cliente que garantiza al cliente un nivel de servicio establecido.
+
+## Escalabilidad
+
+ La escalabilidad hace referencia a la capacidad de ajustar los recursos para satisfacer la demanda.
+ 
+ ## Escalado vertical ( capacidad de procesamiento etc)
+ 
+ Con el escalado vertical, si estuviera desarrollando una aplicación y necesitase más potencia de procesamiento, podría escalar verticalmente para agregar más CPU o RAM a la máquina virtual. 
+ 
+ ## Escalado horizontal ( mas maquinas virtuales contenedores etc)
+ 
+ Con el escalado horizontal, si de repente experimentase un salto elevado en la demanda, los recursos implementados se podrían escalar horizontalmente (ya sea de forma automática o manual). Por ejemplo, podría agregar máquinas virtuales o contenedores adicionales, mediante el escalado horizontal. De la misma manera, si hubiera una caída significativa en la demanda, los recursos implementados se podrían escalar (ya sea de forma automática o manual), mediante el escalado vertical.
+ 
+ ## Reliability Confiabilidad
+ 
+ La confiabilidad es la capacidad de un sistema de recuperarse de los errores y seguir funcionando. También es uno de los pilares del Marco de arquitectura de Microsoft Azure.
+ 
+ ## Prediction 
+ 
+ La previsibilidad en la nube le permite avanzar con confianza. La previsibilidad se puede centrar en el rendimiento o los costos. Tanto la previsibilidad de rendimiento como la de costos están muy influidas por el Marco de arquitectura de Microsoft Azure. Implemente una solución creada en torno a este marco que sea predecible en relación con el costo y el rendimiento.
+ 
+ ## Rendimiento
+ 
+La previsibilidad del rendimiento se centra en predecir los recursos necesarios para ofrecer una experiencia positiva para los clientes. El escalado automático, el equilibrio de carga y la alta disponibilidad son solo algunos de los conceptos de nube que admiten la previsibilidad del rendimiento. 
+
+## Coste
+
+La predicción de costos se centra en pronosticar el costo del gasto en la nube. Con la nube, puede realizar el seguimiento del uso de recursos en tiempo real, supervisar los recursos para asegurarse de que los usa de la manera más eficaz y aplicar análisis de datos para buscar patrones y tendencias que ayuden a planear mejor las implementaciones de recursos.
 
 
 

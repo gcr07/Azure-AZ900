@@ -186,7 +186,7 @@ La previsibilidad del rendimiento se centra en predecir los recursos necesarios 
 La predicción de costos se centra en pronosticar el costo del gasto en la nube. Con la nube, puede realizar el seguimiento del uso de recursos en tiempo real, supervisar los recursos para asegurarse de que los usa de la manera más eficaz y aplicar análisis de datos para buscar patrones y tendencias que ayuden a planear mejor las implementaciones de recursos.
 
 
-
+# Azure Storage
 
 
 

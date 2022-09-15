@@ -189,6 +189,19 @@ La predicción de costos se centra en pronosticar el costo del gasto en la nube.
 # Azure Storage
 
 
+Una cuenta de almacenamiento proporciona un espacio de nombres único para los datos de Azure Storage al que se puede acceder desde cualquier lugar del mundo a través de HTTP o HTTPS. Los datos de esta cuenta son seguros, de alta disponibilidad, duraderos y escalables de forma masiva.
+
+Al crear la cuenta de almacenamiento, primero seleccionará el tipo de cuenta de almacenamiento.
+
+1. Almacenamiento con redundancia local (LRS)
+2. Almacenamiento con redundancia geográfica (GRS)
+3. Almacenamiento con redundancia geográfica con acceso de lectura (RA-GRS).
+4. Almacenamiento con redundancia de zona (ZRS)
+5. Almacenamiento con redundancia de zona geográfica (GZRS)
+6. Almacenamiento con redundancia de zona geográfica con acceso de lectura (RA-GZRS)
+
+Lo anterior es en cuanto a donde se replican los archivos
+
 
 
 

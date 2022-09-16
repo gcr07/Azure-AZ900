@@ -229,7 +229,38 @@ GRS copia los datos de manera sincrónica tres veces dentro de una ubicación f�
 
 GZRS combina la alta disponibilidad que proporciona la redundancia entre zonas de disponibilidad con la protección frente a interrupciones regionales que proporciona la replicación geográfica. Los datos de una cuenta de almacenamiento de GZRS se almacenan en tres zonas de disponibilidad de Azure en la región primaria (de manera similar a ZRS) y también se replican en una región geográfica secundaria para protegerlos frente a desastres regionales. Microsoft recomienda el uso de GZRS en aplicaciones que requieran de coherencia, durabilidad y disponibilidad máximas, además de rendimiento excelente y resistencia para la recuperación ante desastres.
 
+# Servicios de almacenamiento de Azure
 
+## Blobs de Azure
+
+un almacén de objetos que se puede escalar de forma masiva para datos de texto y binarios. También incluye compatibilidad con el análisis de macrodatos a través de Data Lake Storage Gen2.
+
+ ## Azure Files
+ 
+ Recursos compartidos de archivos administrados para implementaciones locales y en la nube.
+ 
+## Colas de Azure
+
+Un almacén de mensajería para mensajería confiable entre componentes de aplicación.
+
+
+## Azure Disks
+
+Volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.
+
+# Blob Storage
+
+Azure Blob Storage es una solución de almacenamiento de objetos para la nube. Puede almacenar grandes cantidades de datos, como datos de texto o binarios. Azure Blob Storage es no estructurado, lo que significa que no hay ninguna restricción en cuanto a los tipos de datos que puede contener.
+
+Los blobs no están limitados a formatos de archivo comunes. Un blob podría contener gigabytes de datos binarios transmitidos desde un instrumento científico, un mensaje cifrado para otra aplicación o datos en un formato personalizado para una aplicación que se está desarrollando. 
+
+Azure Storage ofrece diferentes niveles de acceso para el almacenamiento de blobs, lo que le ayuda a almacenar datos de objetos de la manera más rentable. Entre los niveles de acceso disponibles se incluyen:
+
+***Nivel de acceso frecuente:*** optimizado para almacenar datos a los que se accede con frecuencia (por ejemplo, imágenes para el sitio web).
+
+***Nivel de acceso esporádico:*** optimizado para datos a los que se accede con poca frecuencia y que se almacenan al menos durante 30 días (por ejemplo, las facturas de los clientes).
+
+***Nivel de acceso de archivo:*** conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo).
 
 
 

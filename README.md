@@ -462,18 +462,41 @@ Ayuda a garantizar que las aplicaciones sean seguras y estén libres de vulnerab
 
 Controla el acceso a los datos empresariales y de clientes que es necesario proteger.
 
+# Microsoft Defender for Cloud
+
+Microsoft Defender for Cloud es una herramienta de supervisión para la administración de la posición de seguridad y la protección contra amenazas. Supervisa los entornos en la nube, locales, híbridos y multinube para ofrecer instrucciones y notificaciones destinadas a reforzar la posición de seguridad.
+
+Defender for Cloud proporciona las herramientas necesarias para proteger los recursos, realizar un seguimiento de su posición de seguridad, protegerse frente a ciberataques y simplificar la administración de la seguridad. La implementación de Defender for Cloud es fácil, ya está integrada de forma nativa en Azure.
+
+> Dado que Defender for Cloud es un servicio nativo de Azure, muchos servicios de Azure se supervisan y protegen sin necesidad de ninguna implementación. 
 
 
+Cuando sea necesario, Defender for Cloud puede implementar automáticamente un agente de Log Analytics para recopilar datos relacionados con la seguridad. En el caso de las máquinas de Azure, la implementación se controla directamente. Para entornos híbridos y de varias nubes, los planes de Microsoft Defender se amplían a máquinas que no son de Azure con la ayuda de Azure Arc. Las características de la Administración de la posición de seguridad en la nube (CSPM) se amplían a máquinas de varias nubes sin necesidad de ningún agente.
 
 
+***Cloud Security Posture Management (CSPM)****
 
+Cuando sea necesario, Defender for Cloud puede implementar automáticamente un agente de Log Analytics para recopilar datos relacionados con la seguridad. En el caso de las máquinas de Azure, la implementación se controla directamente. Para entornos híbridos y de varias nubes, los planes de Microsoft Defender se amplían a máquinas que no son de Azure con la ayuda de Azure Arc. Las características de la Administración de la posición de seguridad en la nube (CSPM) se amplían a máquinas de varias nubes sin necesidad de ningún agente.
 
+Se puede convinar esto con AWS 
 
+Microsoft Defender para servidores proporciona la detección de amenazas y defensas avanzadas a las instancias de EC2 con Windows y Linux.
 
+## Evaluación, protección y defensa
 
+Defender for Cloud cubre tres necesidades vitales a medida que administra la seguridad de los recursos y las cargas de trabajo en la nube y en el entorno local:
 
+Evaluación continua: conozca la posición de seguridad. Identifique y realice un seguimiento de las vulnerabilidades.
 
+Protección: proteja los recursos y los servicios con Azure Security Benchmark.
 
+Defensa: detecte y resuelva las amenazas a recursos, cargas de trabajo y servicios.
+
+# Azure Security Benchmark. 
+
+Este punto de referencia es el conjunto de directrices específico de Azure y creado por Microsoft relativo a los procedimientos recomendados de seguridad y cumplimiento basados en marcos de cumplimiento comunes.
+
+The Azure Security Benchmark contains recommendations that help you improve the security of your applications and data on Azure.
 
 
 

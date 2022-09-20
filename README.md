@@ -365,16 +365,102 @@ También puede permitir que el teléfono del empleado se convierta en un método
 
 Los usuarios pueden registrarse y luego seleccionar una llave de seguridad de FIDO2 en la interfaz de inicio de sesión como medio principal de autenticación. Estas llaves de seguridad de FIDO2 suelen ser dispositivos USB, pero también pueden usar Bluetooth o NFC. Con un dispositivo de hardware que controla la autenticación, se aumenta la seguridad de una cuenta, ya que no hay ninguna contraseña que pueda quedar expuesta ni adivinarse
 
-# Identidades externas de Azure (  External Identities )
+# Identidades externas de Azure (  Azure AD External Identities )
 
 Una identidad externa es una persona, un dispositivo, un servicio, etc. que está fuera de la organización. Azure AD External Identities hace referencia a todas las formas en que puede interactuar de forma segura con usuarios externos a su organización. Si quiere colaborar con asociados, distribuidores o proveedores, puede compartir los recursos y definir cómo los usuarios internos pueden acceder a organizaciones externas. Si es un desarrollador que crea aplicaciones orientadas al consumidor, puede administrar las experiencias de identidad de los clientes.
 
+Las identidades externas pueden parecerse al inicio de sesión único. Con External Identities, los usuarios externos pueden "traer sus propias identidades". Tanto si tienen una identidad digital corporativa o gubernamental, como una identidad social no administrada, como Google o Facebook, pueden usar sus propias credenciales para iniciar sesión. El proveedor de identidades administra la identidad del usuario externo y el usuario administra el acceso a sus aplicaciones con Azure AD o Azure AD B2C para mantener protegidos los recursos.
+
+## Acceso condicional de Azure
+
+El acceso condicional es una herramienta que usa Azure Active Directory para permitir (o denegar) el acceso a los recursos en función de señales de identidad. Estas señales incluyen quién es el usuario, dónde se encuentra y desde qué dispositivo solicita el acceso.
+
+La aplicación es la acción que lleva a cabo la decisión. Por ejemplo, la acción es permitir el acceso o exigir al usuario que proporcione una segunda forma de autenticación.
+
+## Control de acceso basado en roles de Azure
+
+Cuando tenemos varios equipos de TI e ingeniería, ¿cómo podemos controlar el acceso que tienen a los recursos del entorno de nube? El principio de privilegios mínimos indica que solo debe conceder acceso al nivel necesario para completar una tarea. Si solo necesita acceso de lectura a un blob de almacenamiento, solo se le debe conceder acceso de lectura a ese blob de almacenamiento. No se debe conceder acceso de escritura a ese blob ni debe tener acceso de lectura a otros blobs de almacenamiento. Es una buena práctica de seguridad seguir.
+
+Pero, administrar ese nivel de permisos para todo el equipo se volvería tedioso. En vez de definir los requisitos de acceso detallados de cada individuo y, después, ir actualizándolos a medida que se vayan creando más recursos o se unan nuevos miembros al equipo, Azure permite controlar el acceso a través del ***control de acceso basado en roles de Azure (RBAC de Azure).****
+
+> Azure proporciona roles integrados que describen las reglas de acceso comunes de los recursos en la nube. También podemos definir nuestros propios roles. Cada rol tiene un conjunto asociado de permisos de acceso que tienen que ver con ese rol. Cuando se asignan usuarios o grupos a uno o varios roles, reciben todos los permisos de acceso asociados.
+
+## ¿Cómo se aplica el control de acceso basado en roles a los recursos?
+
+El control de acceso basado en roles se aplica a un ámbito, que es un recurso o un conjunto de recursos en los que este acceso se permite.
+
+Los ámbitos pueden ser lo siguiente:
+
+1. Un grupo de administración (una colección de varias suscripciones)
+2. Una sola suscripción
+3. Un grupo de recursos.
+4. Un solo recurso
+
+# Azure Resource Manager ¿Cómo se aplica RBAC de Azure?
+
+RBAC de Azure se aplica a cualquier acción que se inicie en un recurso de Azure que pasa por Azure Resource Manager. Resource Manager es un servicio de administración que proporciona una forma de organizar y proteger nuestros recursos en la nube.
+
+Normalmente, se accede a Resource Manager a través de Azure Portal, Azure Cloud Shell, Azure PowerShell y la CLI de Azure. RBAC de Azure no aplica permisos de acceso en el nivel de aplicación ni de datos. La seguridad de la aplicación debe controlarla la propia aplicación.
 
 
+# Modelo de Confianza cero
+
+Confianza cero es un modelo de seguridad que supone el peor de los escenarios posibles y protege los recursos con esa expectativa. Confianza cero presupone que hay una vulneración y comprueba todas las solicitudes como si provinieran de una red no controlada.
+
+Para abordar este nuevo mundo informático, Microsoft recomienda encarecidamente el modelo de seguridad de Confianza cero, que se basa en estos principios rectores:
+
+### Comprobar explícitamente: 
+
+realice siempre las operaciones de autorización y autenticación en función de todos los puntos de datos disponibles.
+
+### Usar el acceso de privilegios mínimos:
+
+limite el acceso de los usuarios con Just-in-Time y Just-Enough-Access (JIT/JEA), directivas que se adaptan al nivel de riesgo y protección de datos.
+
+### Asumir que hay brechas: 
+
+minimice el radio de expansión y el acceso a los segmentos. Comprobación del cifrado de un extremo a otro. Utilice el análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
 
 
+# Defensa en profundidad
+
+El objetivo de la defensa en profundidad es proteger la información y evitar que personas no autorizadas a acceder puedan sustraerla.
+
+Una estrategia de defensa en profundidad usa una serie de mecanismos para ralentizar el avance de un ataque dirigido a adquirir acceso no autorizado a los datos.
 
 
+# Capas de defensa en profundidad
+
+
+Aquí tiene una breve descripción del rol de cada capa:
+
+## La capa de seguridad física
+
+Es la primera línea de defensa para proteger el hardware informático del centro de datos.
+
+## La capa de identidad y acceso
+
+Controla el acceso a la infraestructura y al control de cambios.
+
+## La capa perimetral 
+
+Usa protección frente a ataques de denegación de servicio distribuido (DDoS) para filtrar los ataques a gran escala antes de que puedan causar una denegación de servicio para los usuarios.
+
+## La capa de red
+
+Limita la comunicación entre los recursos a través de controles de acceso y segmentación.
+
+## La capa de proceso
+
+Protege el acceso a las máquinas virtuales.
+
+## La capa de aplicación
+
+Ayuda a garantizar que las aplicaciones sean seguras y estén libres de vulnerabilidades de seguridad.
+
+## La capa de datos 
+
+Controla el acceso a los datos empresariales y de clientes que es necesario proteger.
 
 
 

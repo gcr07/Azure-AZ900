@@ -1,5 +1,9 @@
 # Azure Certification
 
+# Link del portal de Azure
+
+> https://portal.azure.com
+
 # Define Cloud Computing
 
 ## Shared responsability model
@@ -596,10 +600,56 @@ Por ejemplo, Azure Policy incluye una iniciativa denominada Habilitar la supervi
 Aun cuando haya directivas de control de acceso basado en roles de Azure (RBAC de Azure) en vigor, sigue existiendo el riesgo de que alguien con el nivel de acceso adecuado elimine recursos de nube críticos. Los bloqueos de recursos impiden que los recursos se eliminen o actualicen, según el tipo de bloqueo. Los bloqueos de recursos se pueden aplicar a recursos individuales, grupos de recursos o incluso a una suscripción completa. Los bloqueos de recursos se heredan, lo que significa que si coloca un bloqueo de recursos en un grupo de recursos, también se aplicará el bloqueo a todos los recursos dentro del grupo.
 
 
+## Tipos de bloqueos de recursos
+
+Hay dos tipos de bloqueos de recursos, uno que impide que los usuarios eliminen un recurso y otro que impide que los usuarios lo cambien o eliminen.
+
+Eliminar significa que los usuarios autorizados pueden leer y modificar un recurso, pero no eliminarlo.
+ReadOnly significa que los usuarios autorizados solo pueden leer recursos, pero no actualizarlos ni eliminarlos. Aplicar este bloqueo es similar a restringir todos los usuarios autorizados a los permisos concedidos por el rol Lector.
+
+
+## ¿Cómo se elimina o cambia un recurso bloqueado?
+
+Para modificar un recurso bloqueado, primero hay que quitar el bloqueo. Tras quitarlo, podemos aplicar cualquier acción que podamos realizar de acuerdo a nuestros permisos. Los bloqueos de recursos se aplican con independencia de los permisos RBAC. Es decir, aun siendo el propietario del recurso, tendremos que quitar el bloqueo antes de poder realizar la actividad bloqueada.
 
 
 
 
+# Azure Portal
+
+The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription using a graphical user interface. You can build, manage, and monitor everything from simple web apps to complex cloud deployments in the portal
+
+# The Azure Command-Line Interface (CLI)
+
+Is a cross-platform command-line tool to connect to Azure and execute administrative commands on Azure resources. It allows the execution of commands through a terminal using interactive command-line prompts or a script.
+
+The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation
+
+
+# Azure Cloud Shell
+
+Es como la Aws console que le picas en el portal y te abre una linea de comandos.
+Tendrá la opción de elegir entre PowerShell o Bash. Si desea administrar máquinas virtuales basadas en Windows, elegirá PowerShell; por otro lado, si desea administrar máquinas virtuales Linux, Bash es la opción que necesita.
+
+Dicho esto, tiene la CLI de Azure, que se usa para emitir un conjunto de comandos para agregar, eliminar o modificar recursos en Azure. Con eso me refiero a los recursos reales de Azure y no al sistema operativo que reside en los recursos. La CLI de Azure está disponible en las secciones Bash y PowerShell de Azure Cloud Shell.
+
+¿Qué es Azure Cloud Shell?
+Azure Cloud Shell es un entorno de shell hospedado que se ejecuta en un contenedor de Ubuntu.
+
+Cloud Shell proporciona dos entornos de shell: Bash (con la CLI de Azure preinstalada) y PowerShell (con Azure PowerShell preinstalado). Una lista desplegable en la parte superior de la ventana de Cloud Shell le permite cambiar fácilmente entre los dos entornos.
+
+Cloud Shell es accesible en un explorador web y tiene integraciones para terminal de Windows y Visual Studio Code.
+
+# Azure Resource Manager.
+
+
+# Acceso al Portal de confianza de servicios
+
+> Puede acceder al Portal de confianza de servicios en https://servicetrust.microsoft.com/
+
+El Portal de confianza de servicios de Microsoft es un portal que proporciona contenido, herramientas y otros recursos sobre las prácticas de seguridad, privacidad y cumplimiento de Microsoft.
+
+## Reglamento general de protección de datos; documentación útil para la responsabilidad del RGPD
 
 
 

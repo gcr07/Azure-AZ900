@@ -628,6 +628,8 @@ The Azure command-line interface (Azure CLI) is a set of commands used to create
 
 # Azure Cloud Shell
 
+> en resumen Azure Cloud Shell ( padre ) , incluida la CLI de Azure (bash)  y Azure PowerShell ( PowerShell para WIN)
+
 Es como la Aws console que le picas en el portal y te abre una linea de comandos.
 Tendrá la opción de elegir entre PowerShell o Bash. Si desea administrar máquinas virtuales basadas en Windows, elegirá PowerShell; por otro lado, si desea administrar máquinas virtuales Linux, Bash es la opción que necesita.
 
@@ -640,8 +642,11 @@ Cloud Shell proporciona dos entornos de shell: Bash (con la CLI de Azure preinst
 
 Cloud Shell es accesible en un explorador web y tiene integraciones para terminal de Windows y Visual Studio Code.
 
-# Azure Resource Manager.
+# Azure Resource Manager  Azure Resource Manager (ARM), Arc
 
+La administración de entornos híbridos y de varias nubes puede complicarse rápidamente. Azure proporciona una serie de herramientas para aprovisionar, configurar y supervisar recursos de Azure. ¿Qué ocurre con los recursos locales en una configuración híbrida o los recursos de nube en una configuración de varias nubes?
+
+Al usar Azure Resource Manager (ARM), Arc le permite ampliar el cumplimiento y la supervisión de Azure a las configuraciones híbridas y de varias nubes. Azure Arc simplifica el gobierno y la administración al ofrecer una plataforma de administración local y multinube coherente.
 
 # Acceso al Portal de confianza de servicios
 
@@ -653,8 +658,19 @@ El Portal de confianza de servicios de Microsoft es un portal que proporciona co
 
 
 
+#  Las plantillas de Azure Resource Manager y Azure ARM  Infraestructuras como código (IaC)
+
+Es lo mismo 
+
+ARM agrupa los recursos en contenedores que reúnen los activos de Azure. Resources Manager se puede usar para desplegar activos de múltiples servicios de proveedores Azure como Microsoft Storage o Microsoft Compute.
 
 
+Azure Resource Manager (ARM) es el servicio de implementación y administración de Azure. Proporciona una capa de administración que le permite crear, actualizar y eliminar recursos de la cuenta de Azure. Cada vez que haga algo con los recursos de Azure, ARM está implicado.
+
+Cuando un usuario envía una solicitud de cualquiera de las herramientas, API o SDK de Azure, ARM la recibe. ARM autentica y autoriza la solicitud. Después, ARM envía la solicitud al servicio de Azure, que lleva a cabo la acción solicitada. Verá resultados y funcionalidades coherentes en todas las herramientas, ya que todas las solicitudes se controlan mediante la misma API.
+
+
+Administrar la infraestructura mediante plantillas declarativas en lugar de scripts. Una plantilla de Resource Manager es un archivo JSON que define lo que quiere implementar en Azure.
 
 
 

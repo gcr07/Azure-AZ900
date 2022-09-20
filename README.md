@@ -674,6 +674,38 @@ Administrar la infraestructura mediante plantillas declarativas en lugar de scri
 
 
 
+#  Herramientas de supervisión de Azure
+
+# Azure Advisor
+
+Azure Advisor evalúa los recursos de Azure y hace recomendaciones que contribuyen a mejorar la confiabilidad, la seguridad y el rendimiento, lograr la excelencia operativa y reducir los costos. Azure Advisor está diseñado para ayudarle a ahorrar tiempo en la optimización en la nube. El servicio de recomendaciones sugiere medidas que puede adoptar de inmediato, posponer o descartar.
+
+# Azure Service Health
+
+Microsoft Azure proporciona una solución global en la nube para ayudarle a administrar sus necesidades de infraestructura, llegar a sus clientes, innovar y adaptarse rápidamente. Conocer el estado de la infraestructura global de Azure y los recursos individuales podría parecer una tarea abrumadora. Azure Service Health le permite realizar un seguimiento de los recursos de Azure, tanto los recursos implementados específicamente como el estado general de Azure. Azure Service Health lo hace combinando tres servicios de Azure diferentes:
+
+Con el Estado de Azure, Service Health y Resource Health, Azure Service Health ofrece una vista completa de todo el entorno de Azure, desde el estado global de los servicios y regiones de Azure hasta los recursos específicos. Además, las alertas históricas se almacenan y son accesibles para su revisión posterior. Algo que inicialmente pensó que era una simple anomalía que se ha convertido en una tendencia, se puede revisar e investigar fácilmente gracias a las alertas históricas.
+
+# Azure Monitor
+
+Azure Monitor es una plataforma para recopilar datos sobre los recursos, analizar esos datos, visualizar la información e incluso actuar en función de los resultados. Azure Monitor puede supervisar los recursos de Azure, los recursos locales e incluso los recursos de varias nubes, como las máquinas virtuales hospedadas con otro proveedor de nube.
+
+Además, puede usar los datos para ayudarle a reaccionar ante eventos críticos en tiempo real gracias a las alertas enviadas a los equipos por SMS, correo electrónico, etc. También puede usar umbrales que desencadenen la funcionalidad de escalado automático para ajustarse a la demanda.
+
+# Azure Log Analytics
+
+Azure Log Analytics es la herramienta de Azure Portal donde escribirá y ejecutará consultas de registro en los datos recopilados por Azure Monitor. Log Analytics es una herramienta sólida que admite consultas sencillas, complejas y análisis de datos. Puede escribir una consulta sencilla que devuelva un conjunto de registros y, después, usar las características de Log Analytics para ordenarlos, filtrarlos y analizarlos. Puede escribir una consulta avanzada para realizar análisis estadísticos y visualizar los resultados en un gráfico para identificar una tendencia determinada. Tanto si trabaja con los resultados de las consultas de forma interactiva como si los usa con otras características de Azure Monitor, como las alertas de consultas de registros o los libros, Log Analytics es la herramienta que va a usar para escribir y probar esas consultas.
+
+## Application Insights caracteristica de Azure Monitor 
+
+Las alertas de Azure Monitor usan grupos de acciones para configurar a quién realizar la notificación y qué acción realizar. Un grupo de acciones es simplemente una colección de preferencias de notificaciones y acciones que se asocian a una o varias alertas. Azure Monitor, Service Health y Azure Advisor usan grupos de acciones para notificarle cuándo se ha desencadenado una alerta.
+
+
+
+Application Insights, una característica de Azure Monitor, supervisa las aplicaciones web. Application Insights es capaz de supervisar aplicaciones que se ejecutan en Azure, en el entorno local o en otro entorno de nube.
+
+
+
 
 
 

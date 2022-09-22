@@ -706,7 +706,9 @@ Application Insights, una característica de Azure Monitor, supervisa las aplica
 
 
 
+# Costos
 
+Azure Cost Management
 
 
 

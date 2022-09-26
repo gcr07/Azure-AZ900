@@ -732,8 +732,39 @@ Las alertas de cuota de gasto de departamento notifican cuándo el gasto del dep
 Un presupuesto es donde se establece un límite de gasto para Azure. Puede establecer presupuestos basados en una suscripción, un grupo de recursos, un tipo de servicio u otros criterios. Al establecer un presupuesto, también establecerá una alerta de presupuesto. 
 
 
+# Estudio
+
+## AzCopy
+
+AzCopy es una utilidad de línea de comandos que puede usar para copiar blobs o archivos a una cuenta de almacenamiento o desde una cuenta de almacenamiento. En este artículo sirve de ayuda para descargar AzCopy, conectarse a la cuenta de almacenamiento y, a continuación, transferir datos.
+
+### Pregunta
+
+Which of the following is the best approach when you need to copy large amount of files between two Azure Storage accounts?
+
+##  Azure Private cloud ¿?
+
+True or False: Azure is a public cloud, and has no private cloud offerings
+
+Some aspects of Azure are not open to the public and require a private agreement with Microsoft such as Azure Government and DoD services<br>For more info: <a href='https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/'>https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/</a>
 
 
+
+## Azure Policy
+
+Azure Policy can add restrictions on storage account SKUs, virtual machine instance types, and rules relating to tagging of resources and groups. It cannot prompt a user to ask them if they are sure.
+
+## Azure Consumption-based pricing model
+
+The common pricing options for Azure services are: Consumption-based price - You are charged for only what you use. This model is also known as the Pay-As-You-Go rate. Fixed price - You provision resources and are charged for those instances whether or not they are used.
+
+## Azure Time-based (Fixed) pricing model ( por ejemplo tu contratas una maquina virtual por 1 mes la uses o no te cobran 1 mes)
+
+Fixed price - You provision resources and are charged for those instances whether or not they are used.
+
+
+## What is an availability set?
+An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. We recommended that two or more VMs are created within an availability set to provide for a highly available application and to meet the 99.95% Azure SLA. There is no cost for the Availability Set itself, you only pay for each VM instance that you create.
 
 
 

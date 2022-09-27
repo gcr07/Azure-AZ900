@@ -774,7 +774,11 @@ What benefit does Availability Sets provide when it comes to virtual machines in
 Separa fisica y logicamente maquinas virtuales y ya si una se cae la otra queda 
 
 
+Availability Sets allow you to tell Azure which virtual machines are identical, so that Azure will keep them apart physically inside the datacenter. This helps when there are either expected or unexpected downtime, by increasing the chances that one issue does not affect all VMs in a single Availability Set.
 
+## Microsoft Azure VM Scale Sets 
+
+Are groups of individual virtual machines (VMs) within the Microsoft Azure public cloud that information technology (IT) administrators can configure and manage as a single unit. Administrators can use Azure VM Scale Sets to deploy complete services, rather than duplicate the same VMs.
 
 
 

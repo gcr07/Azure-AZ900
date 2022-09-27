@@ -795,6 +795,17 @@ An Azure Management group is logical containers that allow Azure Administrators 
 
 # Azure Storage redundancy
 
+Tarea hacer un resumen bueno
+
+https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy
+
+# Azure Availability Sets
+
+
+
+# Que es redundancia
+
+En ingeniería, la redundancia en datos1 es la duplicación o re-escritura de información con la intención de aumentar la confiabilidad del sistema, generalmente en forma de respaldo de almacenamiento o prueba de fallas.
 
 
 

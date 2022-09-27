@@ -781,9 +781,19 @@ Availability Sets allow you to tell Azure which virtual machines are identical, 
 Are groups of individual virtual machines (VMs) within the Microsoft Azure public cloud that information technology (IT) administrators can configure and manage as a single unit. Administrators can use Azure VM Scale Sets to deploy complete services, rather than duplicate the same VMs.
 
 
+## What is Azure role-based access control (Azure RBAC)?
+
+Access management for cloud resources is a critical function for any organization that is using the cloud. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.
+
+Azure RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management to Azure resources.
+
+## Azure Management group
+
+An Azure Management group is logical containers that allow Azure Administrators to manage access, policy, and compliance across multiple Azure Subscriptions en masse.
 
 
 
+# Azure Storage redundancy
 
 
 

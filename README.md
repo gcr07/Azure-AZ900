@@ -764,7 +764,14 @@ Fixed price - You provision resources and are charged for those instances whethe
 
 
 ## What is an availability set?
+
 An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. We recommended that two or more VMs are created within an availability set to provide for a highly available application and to meet the 99.95% Azure SLA. There is no cost for the Availability Set itself, you only pay for each VM instance that you create.
+
+### Pregunta 
+
+What benefit does Availability Sets provide when it comes to virtual machines in Azure?
+
+Separa fisica y logicamente maquinas virtuales y ya si una se cae la otra queda 
 
 
 

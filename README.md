@@ -836,6 +836,29 @@ Azure Container Instances offers the fastest and simplest way to run a container
 The task of automating, managing, and interacting with a large number of containers is known as orchestration. Azure Kubernetes Service is a complete orchestration service for containers with distributed architectures and large volumes of containers.
 
 
+## Use containers in your solutions
+
+Containers are often used to create solutions by using a microservice architecture. This architecture is where you break solutions into smaller, independent pieces. For example, you might split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
+
+# Serverless
+
+## Azure Functions
+
+
+When you're concerned only about the code running your service, and not the underlying platform or infrastructure, using Azure Functions is ideal. Functions are commonly used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
+
+
+## Azure Logic Apps
+
+Logic apps are similar to functions. Both enable you to trigger logic based on an event. Where functions execute code, logic apps execute workflows that are designed to automate business scenarios and are built from predefined logic blocks.
+
+## Functions vs. Logic Apps
+
+
+Functions and Logic Apps can both create complex orchestrations. An orchestration is a collection of functions or steps that are executed to accomplish a complex task.
+
+With Functions, you write code to complete each step.
+With Logic Apps, you use a GUI to define the actions and how they relate to one another
 
 
 
@@ -856,7 +879,9 @@ The task of automating, managing, and interacting with a large number of contain
 
 
 
-![Portswinger](https://user-images.githubusercontent.com/63270579/192807146-b33a5494-bf33-48ca-ba6b-fe0e706f2c8e.PNG)
+
+
+
 
 
 

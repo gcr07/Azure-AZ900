@@ -946,7 +946,20 @@ Global virtual network peering: Connecting virtual networks across Azure regions
 While Azure Firewall is a comprehensive and robust service with several features to regulate traffic, NSGs act as more of a basic firewall that filters traffic at the network layer. Azure Firewall is adept at analyzing and filtering L3, L4 and L7 traffic. Azure Firewall also provides support for threat-intelligence-based filtering, which NSG can't do.
 
 
+# Azure VPN Gateway
 
+Las redes privadas virtuales usan un túnel cifrado en otra red. Normalmente, se implementan para conectar entre sí dos o más redes privadas de confianza a través de una red que no es de confianza (normalmente, la red pública de Internet). El tráfico se cifra mientras viaja por la red que no es de confianza para evitar ataques de interceptación o de otro tipo.
+
+
+![vpngateway-site-to-site-connection-diagram-0e1e7db2](https://user-images.githubusercontent.com/63270579/192849021-1e212fbe-7999-49e0-bb31-f58348facf55.png)
+
+
+Si necesita alguno de los siguientes tipos de conectividad, use una instancia de VPN Gateway basada en rutas:
+
+-Conexiones entre redes virtuales
+-Conexiones de punto a sitio
+-Conexiones de varios sitios
+-Coexistencia con una puerta de enlace de Azure ExpressRoute
 
 
 

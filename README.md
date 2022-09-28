@@ -864,12 +864,73 @@ With Functions, you write code to complete each step.
 With Logic Apps, you use a GUI to define the actions and how they relate to one another
 
 
+# Redes virtuales de Azure
+
+Las redes virtuales de Azure permiten a los recursos de Azure, como las máquinas virtuales, las aplicaciones web y las bases de datos, comunicarse entre sí, con los usuarios de Internet y con los equipos cliente en el entorno local. Una red de Azure se puede considerar una extensión de la red local con recursos que vincula otros recursos de Azure.
 
 
+Las redes virtuales de Azure proporcionan las importantes funcionalidades de red siguientes:
+
+## Aislamiento y segmentación
+
+La red virtual de Azure permite crear varias redes virtuales aisladas. Al configurar una red virtual, se define un espacio de direcciones IP privadas con intervalos de direcciones IP públicas o privadas. El intervalo IP público solo existe dentro de la red virtual y no es enrutable en Internet. Después, puede dividir ese espacio de direcciones IP en subredes y asignar parte del espacio de direcciones definido a cada subred con nombre.
+
+En la resolución de nombres, puede usar el servicio de resolución de nombres integrado en Azure. También puede configurar la red virtual para que use un servidor DNS interno o externo.
+
+## Comunicación con Internet
+
+Una máquina virtual en Azure se puede conectar a Internet de forma predeterminada. Puede habilitar las conexiones entrantes desde Internet mediante la asignación de una dirección IP pública a la máquina virtual o colocando la máquina virtual detrás de un equilibrador de carga público. Para la administración de la máquina virtual, puede conectarse a través de la CLI de Azure, el Protocolo de escritorio remoto o Secure Shell.
+
+## Comunicación entre recursos de Azure
+
+Le interesará habilitar los recursos de Azure para que se comuniquen entre sí de forma segura. Puede hacerlo de dos maneras:
+
+Redes virtuales Las redes virtuales no solo pueden conectar máquinas virtuales, sino también otros recursos de Azure, como App Service Environment para Power Apps, Azure Kubernetes Service y conjuntos de escalado de máquinas virtuales de Azure.
+Puntos de conexión de servicio Puede usar los puntos de conexión de servicio para conectarse a otros tipos de recursos de Azure, como cuentas de almacenamiento y bases de datos SQL de Azure. Este enfoque permite vincular varios recursos de Azure con las redes virtuales para mejorar la seguridad y proporcionar un enrutamiento óptimo entre los recursos.
+
+## Comunicación con los recursos locales
+
+Las redes virtuales de Azure permiten vincular entre sí los recursos del entorno local y dentro de la suscripción de Azure. De hecho, puede crear una red que abarque tanto el entorno local como el entorno en la nube. Existen tres mecanismos para lograr esta conectividad:
+
+# Aqui esta lo que buscabas
+
+## Redes privadas virtuales de punto a sitio 
+
+El enfoque habitual para una conexión de red privada virtual (VPN) consiste en establecer la conexión con la red corporativa desde un equipo ajeno a la organización. En este caso, el equipo cliente inicia una conexión VPN cifrada para conectar ese equipo a la red virtual de Azure.
+
+## Redes virtuales privadas de sitio a sitio 
+
+Una VPN de sitio a sitio vincula un dispositivo o puerta de enlace de VPN local con la puerta de enlace de VPN de Azure en una red virtual. De hecho, puede parecer que los dispositivos de Azure están en la red local. La conexión se cifra y funciona a través de Internet.
+
+## Azure ExpressRoute 
+
+Para los entornos donde se necesita más ancho de banda e incluso mayores niveles de seguridad, Azure ExpressRoute es el mejor sistema. ExpressRoute proporciona una conectividad privada dedicada a Azure que no viaja por Internet. (Obtendrá más información sobre ExpressRoute en una unidad independiente más adelante en este módulo.)
+
+## Enrutamiento del tráfico de red
+
+De forma predeterminada, Azure enruta el tráfico entre las subredes de todas las redes virtuales conectadas, las redes locales e Internet. También puede controlar el enrutamiento e invalidar esa configuración del siguiente modo:
+
+Tablas de rutas Una tabla de rutas permite definir reglas para dirigir el tráfico. Puede crear tablas de rutas personalizadas que controlen cómo se enrutan los paquetes entre las subredes.
+Protocolo de puerta de enlace de borde: el Protocolo de puerta de enlace de borde (BGP) funciona con puertas de enlace de VPN, Azure Route Server o ExpressRoute para propagar las rutas BGP locales a las redes virtuales de Azure
 
 
+# Filtrado del tráfico de red
+
+Las redes virtuales de Azure permiten filtrar el tráfico entre las subredes mediante los métodos siguientes:
+
+Grupos de seguridad de red Un grupo de seguridad de red es un recurso de Azure que puede contener varias reglas de seguridad de entrada y salida. Estas reglas se pueden definir para permitir o bloquear el tráfico en función de factores como el protocolo, el puerto y las direcciones IP de destino y origen.
+Aplicaciones virtuales de red Una aplicación virtual de red es una máquina virtual especializada que se puede comparar con un dispositivo de red protegido. Una aplicación virtual de red ejerce una función de red determinada, como ejecutar un firewall o realizar la optimización de la red de área extensa (WAN).
+
+## Conexión de redes virtuales
 
 
+Puede vincular redes virtuales entre sí mediante el emparejamiento de red virtual. El emparejamiento permite que los recursos de cada red virtual se comuniquen entre sí. Estas redes virtuales pueden estar en regiones distintas, lo que permite crear una red global interconectada con Azure.
+
+Virtual network peering enables you to seamlessly connect two or more Virtual Networks in Azure. The virtual networks appear as one for connectivity purposes. The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure. Like traffic between virtual machines in the same network, traffic is routed through Microsoft's private network only.
+
+## ¿Qué es una dirección CIDR? classless
+
+El direccionamiento interdominio sin clase (CIDR o superred) es una manera de combinar varios rangos de direcciones de clase C y formar una única red o ruta. Este método de direccionamiento añade direcciones IP de clase C.
 
 
 

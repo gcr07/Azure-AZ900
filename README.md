@@ -807,7 +807,9 @@ https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy
 
 En ingeniería, la redundancia en datos1 es la duplicación o re-escritura de información con la intención de aumentar la confiabilidad del sistema, generalmente en forma de respaldo de almacenamiento o prueba de fallas.
 
+## Azure Regional Pairs
 
+An Azure region is an area within a geography containing one or more datacenters. Each Azure region is paired with another region within the same geography (with the exception of Brazil South which is paired with a region outside its geography), together making a regional pair.
 
 
 

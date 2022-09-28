@@ -762,6 +762,7 @@ The common pricing options for Azure services are: Consumption-based price - You
 
 Fixed price - You provision resources and are charged for those instances whether or not they are used.
 
+## Azure availability sets
 
 ## What is an availability set?
 

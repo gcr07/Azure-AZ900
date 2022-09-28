@@ -962,9 +962,62 @@ Si necesita alguno de los siguientes tipos de conectividad, use una instancia de
 -Coexistencia con una puerta de enlace de Azure ExpressRoute
 
 
+## Azure ExpressRoute
 
 
+ExpressRoute le permite ampliar las redes locales a la nube de Microsoft mediante una conexión privada con la ayuda de un proveedor de conectividad. Con ExpressRoute, puede establecer conexiones con servicios en la nube de Microsoft, como Microsoft Azure y Microsoft 365.
 
+ExpressRoute admite los siguientes modelos que puede usar para conectar la red local con la nube de Microsoft:
+
+Ubicación de CloudExchange
+Conexión Ethernet de punto a punto
+Conexión universal
+Directamente desde sitios de ExpressRoute
+
+# Azure Storage
+
+Azure Storage, que es un servicio que puede usar para almacenar archivos, mensajes, tablas y otros tipos de información. Los clientes como sitios web, aplicaciones móviles, aplicaciones de escritorio y muchos otros tipos de soluciones personalizadas pueden leer y escribir datos en Azure Storage. Azure Storage también se usa en máquinas virtuales de infraestructura como servicio y en servicios en la nube de plataforma como servicio.
+ 
+
+Para empezar a usar Azure Storage, cree primero una cuenta de Azure Storage para almacenar los objetos de datos. Puede crear una cuenta de Azure Storage mediante Azure Portal, PowerShell o la CLI de Azure.
+
+La cuenta de almacenamiento contendrá todos los objetos de datos de Azure Storage, como blobs, archivos y discos.
+
+***Las VM de Azure usan Azure Disk Storage para almacenar discos virtuales. Sin embargo, no puede usar Azure Disk Storage para almacenar un disco fuera de una máquina virtual.***
+
+Una cuenta de almacenamiento proporciona un espacio de nombres único para los datos de Azure Storage, al que se puede acceder desde cualquier lugar del mundo a través de HTTP o HTTPS. Los datos de esta cuenta son seguros, de alta disponibilidad, duraderos y escalables de forma masiva.
+
+
+## Aspectos básicos de Disk Storage
+
+Disk Storage proporciona discos para Azure Virtual Machines. Las aplicaciones y otros servicios pueden acceder a estos discos y usarlos cuando sea necesario, igual que se haría en escenarios locales. Disk Storage permite que los datos se almacenen de forma persistente y que se acceda a ellos desde un disco duro virtual conectado.
+
+## Azure Blob Storage
+
+Azure Blob Storage es una solución de almacenamiento de objetos para la nube. Puede almacenar grandes cantidades de datos, como datos de texto o binarios. Azure Blob Storage es no estructurado, lo que significa que no hay ninguna restricción en cuanto a los tipos de datos que puede contener. Blob Storage puede administrar miles de cargas simultáneas, cantidades enormes de datos de vídeo, archivos de registro en constante crecimiento y es accesible desde cualquier lugar con conexión a Internet.
+
+Almacenamiento de hasta 8 TB de datos para máquinas virtuales.
+
+![account-container-blob-4da0ac47](https://user-images.githubusercontent.com/63270579/192853622-fc085b6a-c140-4ba6-8f5e-75d73bd1c056.png)
+
+## Azure Files
+
+
+Azure Files ofrece recursos compartidos de archivos totalmente administrados en la nube a los que se puede acceder mediante los protocolos del Bloque de mensajes del servidor y Network File System (versión preliminar). Los recursos compartidos de Azure se pueden montar simultáneamente en implementaciones de Windows, Linux y macOS en la nube o locales
+
+La siguiente ilustración muestra el uso de Azure Files para compartir datos entre dos ubicaciones geográficas. Azure Files garantiza que los datos se cifren en reposo, y el protocolo SMB garantiza que los datos se cifren en tránsito.
+
+![azure-files-5f942c3e](https://user-images.githubusercontent.com/63270579/192853891-14e279bc-4884-4f0a-be07-44c2ccbd126b.png)
+
+
+Una cosa que distingue Azure Files de los archivos ubicados en un recurso compartido de archivos corporativo es que puede tener acceso a los archivos desde cualquier lugar del mundo mediante una dirección URL que apunte al archivo. También puede usar tokens de Firma de acceso compartido (SAS) para permitir el acceso a un recurso privado durante un período de tiempo determinado.
+
+
+Azure Storage ofrece diferentes niveles de acceso para el almacenamiento de blobs, lo que le ayuda a almacenar datos de objetos de la manera más rentable. Entre los niveles de acceso disponibles se incluyen:
+
+Nivel de acceso frecuente: optimizado para almacenar datos a los que se accede con frecuencia (por ejemplo, imágenes para el sitio web).
+Nivel de acceso esporádico: optimizado para datos a los que se accede con poca frecuencia y que se almacenan al menos durante 30 días (por ejemplo, las facturas de los clientes).
+Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo).
 
 
 

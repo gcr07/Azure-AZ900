@@ -781,6 +781,9 @@ Availability Sets allow you to tell Azure which virtual machines are identical, 
 
 Are groups of individual virtual machines (VMs) within the Microsoft Azure public cloud that information technology (IT) administrators can configure and manage as a single unit. Administrators can use Azure VM Scale Sets to deploy complete services, rather than duplicate the same VMs.
 
+That's correct. Virtual machine scale sets let you deploy and manage a set of identical virtual machines.
+
+
 
 ## What is Azure role-based access control (Azure RBAC)?
 

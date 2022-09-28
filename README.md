@@ -933,10 +933,17 @@ Virtual network peering enables you to seamlessly connect two or more Virtual Ne
 El direccionamiento interdominio sin clase (CIDR o superred) es una manera de combinar varios rangos de direcciones de clase C y formar una única red o ruta. Este método de direccionamiento añade direcciones IP de clase C.
 
 
+## Azure supports the following types of peering:
+
+Virtual network peering: Connecting virtual networks within the same Azure region.
+
+Global virtual network peering: Connecting virtual networks across Azure regions.
 
 
 
+# Azure Firewall 
 
+While Azure Firewall is a comprehensive and robust service with several features to regulate traffic, NSGs act as more of a basic firewall that filters traffic at the network layer. Azure Firewall is adept at analyzing and filtering L3, L4 and L7 traffic. Azure Firewall also provides support for threat-intelligence-based filtering, which NSG can't do.
 
 
 

@@ -1093,6 +1093,12 @@ Is a strategic approach to cybersecurity that secures an organization by elimina
 
 
 
+# Azure role-based access control (Azure RBAC)
+
+Access management for cloud resources is a critical function for any organization that is using the cloud. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.
+
+Azure RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management to Azure resources.
+
 
 
 

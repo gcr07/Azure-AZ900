@@ -1024,18 +1024,66 @@ Nivel de acceso de archivo: conveniente para datos a los que raramente se accede
 
 Azure Arc is a bridge that extends the Azure platform to help you build applications and services with the flexibility to run across datacenters osea es un tema de nube hibridas 
 
+Los servidores habilitados para Azure Arc permiten administrar servidores físicos y máquinas virtuales Windows y Linux hospedados fuera de Azure, en la red corporativa o en otro proveedor de nube. Esta experiencia de administración está diseñada para ser coherente con la forma en que administra máquinas virtuales nativas de Azure mediante construcciones estándar de Azure, como Azure Policy y aplicación de etiquetas.
 
 
+# Defense on depth
+
+![2-defense-in-depth](https://user-images.githubusercontent.com/63270579/193321757-1b3a959d-5084-434c-85fe-1a6bb8b52a3e.png)
 
 
+Defense in depth is a strategy that leverages multiple security measures to protect an organization's assets. The thinking is that if one line of defense is compromised, additional layers exist as a backup to ensure that threats are stopped along the way.
+
+## Data
+In almost all cases, attackers are after data:
+
+-Stored in a database
+-Stored on disk inside virtual machines
+-Stored on a software as a service (SaaS) application such as Microsoft 365
+-Stored in cloud storage
+
+The people who store and control access to data are responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
 
 
+## Applications
+
+-Ensure that applications are secure and free of vulnerabilities
+
+-Store sensitive application secrets in a secure storage medium
+
+-Make security a design requirement for all application development
+
+Integrating security into the application development life cycle will help reduce the number of vulnerabilities introduced in code. Encourage all development teams to make their applications secure by default. Make security requirements non-negotiable.
 
 
+## Networking
+
+-Limit communication between resources through segmentation and access controls
+-Deny by default
+-Restrict inbound internet access and limit outbound where appropriate
+-Implement secure connectivity to on-premises networks
+
+At this layer, the focus is on limiting network connectivity across all your resources. Segment your resources and use network-level controls to restrict communication to only what's needed. By limiting this communication, you reduce the risk of lateral movement throughout your network.
 
 
+## Perimeter
+
+Use distributed denial-of-service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users
+Use perimeter firewalls to identify and alert on malicious attacks against your network
+At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting on them are important to keep your network secure.
+
+## Identity and access
+
+-Control access to infrastructure (change control)
+-Use single sign-on and multifactor authentication
+-Audit events and changes
+
+The identity and access layer is all about ensuring that identities are secure, that access granted is only what's needed, and that changes are logged.
 
 
+## Physical security
 
+Physical building security and controlling access to computing hardware within the datacenter are the first line of defense.
 
+With physical security, the intent is to provide physical safeguards against access to assets. This ensures that other layers can't be bypassed, and that loss or theft is handled appropriately.
 

@@ -1087,3 +1087,26 @@ Physical building security and controlling access to computing hardware within t
 
 With physical security, the intent is to provide physical safeguards against access to assets. This ensures that other layers can't be bypassed, and that loss or theft is handled appropriately.
 
+## Zero Trust
+
+Is a strategic approach to cybersecurity that secures an organization by eliminating implicit trust and continuously validating every stage of a digital interaction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

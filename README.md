@@ -1020,6 +1020,9 @@ Nivel de acceso esporádico: optimizado para datos a los que se accede con poca 
 Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo).
 
 
+# Azure Arch
+
+Azure Arc is a bridge that extends the Azure platform to help you build applications and services with the flexibility to run across datacenters osea es un tema de nube hibridas 
 
 
 
